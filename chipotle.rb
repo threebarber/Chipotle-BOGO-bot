@@ -10,13 +10,6 @@ cell=gets.chomp
 puts "Zip code: "
 zipcode=gets.chomp
 
-data={
-	'firstName':first,
-	'lastName':last,
-	'phoneNumber':cell,
-	'optedIn':'false',
-	'zip':zipcode,
-}
 response = Unirest.post url,
                         headers:{
                           'Accept'=>'application/json',
